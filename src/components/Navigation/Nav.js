@@ -1,5 +1,5 @@
 import classes from "./Nav.module.scss";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Nav = () => {
   return (
     <header className={classes.Nav}>
@@ -8,38 +8,38 @@ const Nav = () => {
           {/* <img src="" alt="logo" /> */}
           <h3>KGMA</h3>
         </div>
-        <form action="" method="get" class={classes.headInp}>
-          <div class={classes.bord}></div>
+        <form action="" method="get" className={classes.headInp}>
+          <div className={classes.bord}></div>
           <input
             type="search"
             name="q"
             placeholder="Search..."
-            class={classes.formInpId}
+            className={classes.formInpId}
           />
-          <button type="submit" class={classes.formBtn}>
+          <button type="submit" className={classes.formBtn}>
             <img src="" alt="icon" />
           </button>
         </form>
         <ul className={classes.right}>
           <li>
-            <NavLink to="" className={classes.link}>
+            <Link to="/" className={classes.link}>
               home
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink to="" className={classes.link}>
+            <Link to="/ notes" className={classes.link}>
               notes
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink to="" className={classes.link}>
+            <Link to="/favorites" className={classes.link}>
               favorites
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink to="" className={classes.link}>
+            <Link to="/profile" className={classes.link}>
               profile
-            </NavLink>
+            </Link>
           </li>
         </ul>
       </nav>

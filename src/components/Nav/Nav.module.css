@@ -1,0 +1,30 @@
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.firstUl {
+  display: flex;
+  padding: 0;
+  margin: 0 30px 0 0;
+}
+.lastUl {
+  display: flex;
+  padding: 0;
+  margin: 0 -50px 0 0;
+}
+.CartLink  {
+  padding: 0;
+  margin: 0;
+}
+
+
+@media (max-width: 810px) {
+  .Nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
